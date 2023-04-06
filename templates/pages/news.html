@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ new.title }}
+{% endblock title %}
+
+
+{% block content %}
+    <section class="courses__hero"
+             style="background-image: url('https://gurulab.uz/wp-content/uploads/2022/03/courses-bg.png');">
+        <div class="container">
+            <div class="d-flex justify-content-center justify-content-lg-end">
+                <div class="courses__hero-content text-center">
+                    <p>GuRuLab</p>
+                    <h1><span>Новости</span></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="news pt-5">
+        <div class="container">
+            <div class="row row-gap-4 justify-content-center">
+                {% for new in page_obj %}
+                    <div class="col-12 col-lg-6">
+                        <article class="news__item">
+                            <header class="news__img">
+                                <img src="{{ new.image.url }}"
+                                     class="" alt="{{ new.title|truncatechars:45 }}">
+                            </header>
+                            <div class="news__content">
+                                <a href="{{ new.get_absolute_url }}"
+                                   class="news__title">
+                                    {{ new.title|truncatechars:45 }}
+                                </a>
+                                <time class="news__date" datetime="{{ new.created_at }}">{{ new.created_at }}</time>
+                                {{ new.short_descr|safe }}
+
+                                <a href="{{ new.get_absolute_url }}"
+                                   class="form-btn new__btn">Подробнее</a>
+                            </div>
+
+
+                        </article>
+                    </div>
+                {% endfor %}
+            </div>
+
+            {% if page_obj.has_other_pages %}
+                <ul class="pagination">
+
+                    {% if page_obj.has_previous %}
+                        <li style="transform: rotate(-180deg)">
+                            <a href="?page={{ page_obj.previous_page_number }}">
+                                <svg width="58" height="28" viewBox="0 0 58 28"
+                                     class="d-flex"
+                                     fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M44 28C44 20.268 50.268 14 58 14" stroke="#846666" stroke-width="2"></path>
+                                    <path d="M58 14C50.268 14 44 7.73199 44 0" stroke="#846666" stroke-width="2"></path>
+                                    <path d="M57.3809 14L0.000237942 14" stroke="#846666" stroke-width="2"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    {% endif %}
+
+
+                    {% for i in page_obj.paginator.page_range %}
+                        {% if page_obj.number == i %}
+                            <li><span aria-current="page" class="page-numbers current">{{ i }}</span></li>
+                        {% elif i >= page_obj.number|add:-2 and i <= page_obj.number|add:2 %}
+                            <li><a class="page-numbers" href="?page={{ i }}">{{ i }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+
+                    {% if page_obj.number|add:3 < page_obj.paginator.num_pages %}
+                        <li><span class="page-numbers dots">…</span></li>
+                        <li><a class="page-numbers"
+                               href="?page={{ page_obj.paginator.num_pages }}">{{ page_obj.paginator.num_pages }}</a>
+                        </li>
+                    {% elif page_obj.number|add:2 < page_obj.paginator.num_pages %}
+                        <li><a class="page-numbers"
+                               href="?page={{ page_obj.paginator.num_pages }}">{{ page_obj.paginator.num_pages }}</a>
+                        </li>
+                    {% endif %}
+
+
+                    {% if page_obj.has_next %}
+                        <li>
+                            <a href="?page={{ page_obj.next_page_number }}">
+                                <svg width="58" height="28" viewBox="0 0 58 28"
+                                     class="d-flex"
+                                     fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M44 28C44 20.268 50.268 14 58 14" stroke="#846666" stroke-width="2"></path>
+                                    <path d="M58 14C50.268 14 44 7.73199 44 0" stroke="#846666" stroke-width="2"></path>
+                                    <path d="M57.3809 14L0.000237942 14" stroke="#846666" stroke-width="2"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    {% endif %}
+                </ul>
+            {% endif %}
+        </div>
+    </div>
+{% endblock content %}

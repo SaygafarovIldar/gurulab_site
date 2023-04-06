@@ -1,0 +1,51 @@
+{% load i18n static %}
+
+
+<footer class="footer">
+    <div class="footer__content container">
+        <div class="footer__content-top">
+            <div class="footer__top_content-contacts">
+                <img src="{% static 'images/logo.svg' %}" alt="Gurulab">
+                <ul class="contacts__list">
+                    <li>
+                        <a href="#!" class="contacts__list-link">
+                            <i class="fas fa-phone-alt"></i>
+                            +998909247994
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!" class="contacts__list-link">
+                            <i class="fas fa-phone-alt"></i>
+                            +998903252828
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__top_content-socials">
+                <h3 class="socials__title">{% translate 'Следите за нашими новостями в наших социальных сетях!' %}</h3>
+                <div class="socials__links">
+                    <div class="d-flex align-items-center flex-column flex-sm-row mb-3 gap-3 gap-sm-2">
+                        <h3 class="socials__subTitle mb-0">{% translate 'Подписывайтесь' %}</h3>
+                        <ul class="social d-flex  gap-3 p-0 m-0">
+                            <li>
+                                <a href="https://www.facebook.com/GguRuLaB/" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li><a href="https://instagram.com/gurulab_school?utm_medium=copy_link" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            </li>
+                            <li><a href="" target="_blank"><i class="fab fa-telegram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+        <p class="footer__content-descr">
+            GuRuLaB (c) 2021 — {% translate 'Все права защищены.' %}
+        </p>
+    </div>
+</footer>

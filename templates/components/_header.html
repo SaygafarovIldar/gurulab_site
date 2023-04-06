@@ -1,0 +1,93 @@
+{% load i18n gurulab_tags static %}
+
+
+<div class="container container--wide">
+    <header class="header">
+        <div class="header__wrapper">
+            <a href="{% url 'index' %}" class="logo">
+                <img src="{% static 'images/logo.svg' %}" alt="Gurulab">
+            </a>
+            <nav class="header__nav" id="header_nav">
+                <ul class="header__menu">
+                    <li>
+                        <a href="{% url 'index' %}">Главная</a>
+                    </li>
+                    <li><a href="/#about">О нас</a></li>
+                    <li>
+                        <a href="{% url 'courses' %}">{% translate 'Курсы' %}</a>
+                        <ul class="sub-menu">
+                            {% get_courses as courses %}
+                            {% for course in courses %}
+                                <li>
+                                    <a href="{{ course.get_absolute_url }}">{{ course }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/#masters">Мастера</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'news' %}">Новости</a>
+                    </li>
+                    <li>
+                        <a href="/#contacts">Контакты</a>
+                    </li>
+                </ul>
+                <form action="{% url 'set_language' %}" class="d-flex gap-3" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="next" value="{{ redirect_to }}">
+                    {% get_current_language as LANGUAGE_CODE %}
+                    {% get_available_languages as LANGUAGES %}
+                    {% get_language_info_list for LANGUAGES as languages %}
+                    <ul class="header__lang">
+                        {% for lang in languages %}
+                            <li {% if LANGUAGE_CODE == lang.code %}class="current-lang"{% endif %}>
+                                <input type="submit" name="language" value="{{ lang.code|title }}">
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </form>
+
+                <div class="header__contacts mobile">
+                    <p class="header__subtitle">Адрес:</p>
+                    <p class="header__address">г. Ташкент, Яккасарайский район ул. Марьям Якубова дом №18</p>
+                    <p class="header__subtitle">Телефон:</p>
+                    <a href="tel:+998909247994" class="header__phone">+998909247994</a>
+                    <a href="tel:+998903252828" class="header__phone">++998903252828</a>
+                </div>
+                <ul class="header__social mobile">
+                    <li><a href="https://www.facebook.com/GguRuLaB/" aria-label="social"><img
+                            src="{% static 'images/icons/Facebook.svg' %}"
+                            alt="Facebook"></a>
+                    </li>
+                    <li><a href="https://instagram.com/gurulab_school?utm_medium=copy_link" aria-label="social"><img
+                            src="{% static 'images/icons/Instagram.svg' %}" alt="Instagram"></a>
+                    </li>
+                    <li><a href="" aria-label="social"><img
+                            src="{% static 'images/icons/Telegram.svg' %}"
+                            alt="Telegram"></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__right">
+                <p class="header__phones">
+                    <a href="tel:+998909247994" class="header__phone">+998909247994</a>,
+                    <a href="tel:+998903252828" class="header__phone">+998903252828</a>
+                </p>
+                <p class="header__address">г. Ташкент, Яккасарайский район <br>ул. Марьям Якубова дом №18</p>
+            </div>
+            <div class="burger mobile">
+                <input type="checkbox" id="burgerBtn" class="burger-checkbox">
+                <label for="burgerBtn">
+                    <div class="hamburger">
+                        <span class="bar bar1"></span>
+                        <span class="bar bar2"></span>
+                        <span class="bar bar3"></span>
+                        <span class="bar bar4"></span>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </header>
+</div>

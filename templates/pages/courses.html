@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Курсы
+{% endblock title %}
+
+{% block content %}
+<section class="courses__hero"
+         style="background-image: url('https://gurulab.uz/wp-content/uploads/2022/03/courses-bg.png');">
+    <div class="container">
+        <div class="d-flex justify-content-end">
+            <div class="courses__hero-content text-center">
+                <p></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="courses-page">
+    <div class="container">
+        <div class="row row-gap-4">
+            {% for course in courses %}
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="courses__item">
+                    <a href="{{ course.get_absolute_url }}" class="courses__img">
+                        <img src="{{ course.get_preview_image }}" alt="{{ course.title }}"/>
+                    </a>
+                    <a href="{{ course.get_absolute_url }}" class="courses__title">{{ course.title|capfirst }}</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock content %}

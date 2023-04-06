@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    {{ course.title }}
+{% endblock title %}
+
+{% block content %}
+    <section class="courses__hero"
+             style="background-image: url('{% static 'images/courses-bg.png' %}');">
+        <div class="container">
+            <div class="courses__hero-content" >
+                <p></p>
+                <h1>{{ course.title }}</h1>
+            </div>
+        </div>
+    </section>
+    <div class="container section-courses">
+        <div class="row">
+            <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+                <ul class="content__sidebar m-0 p-0">
+                    {% for course_item in courses %}
+                        <li>
+                            <a class="{% if course.title == course_item.title %}active{% endif %}"
+                               href="{{ course_item.get_absolute_url }}"
+                               title="{{ course_item.title }}">{{ course_item.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-12 col-lg-8">
+                <div class="content__inner">
+                    <div class="tab-item-header">
+                        <div class="tab-item-info">В группе: {{ course.students_in_group }}</div>
+                        <div class="tab-item-info">Длительность обучения: {{ course.study_duration }}</div>
+                    </div>
+                    <div>
+                        {{ course.content|safe }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

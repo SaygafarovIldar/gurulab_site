@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ new.title }}
+{% endblock %}
+
+
+{% block content %}
+    <section class="courses__hero"
+             style="background-image: url('https://gurulab.uz/wp-content/uploads/2022/03/courses-bg.png');">
+        <div class="container">
+            <div class="d-flex justify-content-end">
+                <div class="courses__hero-content text-center" style="max-width: 900px;">
+                    <p>{{ new.title }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="blog">
+    <div class="container">
+        <div class="blog__content">
+            <h2 class="blog__title">{{ new.title }}</h2>
+            <time class="blog__date" datetime="{{ new.created_at.date }}">{{ new.created_at.date }}</time>
+            <div>
+                {{ new.content|safe }}
+            </div>
+             <p class="blog__img text-center">
+                 <img src="{{ new.image.url }}" alt="">
+             </p>
+        </div>
+    </div>
+</section>
+{% endblock %}

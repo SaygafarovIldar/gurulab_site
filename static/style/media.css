@@ -645,6 +645,11 @@
 }
 
 @media (max-width: 575.98px) {
+    .nav__contacts {
+        align-items: flex-start;
+        flex-direction: column;
+        margin-top: 15px;
+    }
     .tab-item-info {
         margin-right: 0;
     }

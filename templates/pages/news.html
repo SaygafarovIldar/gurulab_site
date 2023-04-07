@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load i18n  static %}
 
 {% block title %}
     {{ new.title }}
@@ -7,12 +8,12 @@
 
 {% block content %}
     <section class="courses__hero"
-             style="background-image: url('https://gurulab.uz/wp-content/uploads/2022/03/courses-bg.png');">
+             style="background-image: url('{% static 'images/courses-bg.png' %}');">
         <div class="container">
             <div class="d-flex justify-content-center justify-content-lg-end">
                 <div class="courses__hero-content text-center">
                     <p>GuRuLab</p>
-                    <h1><span>Новости</span></h1>
+                    <h1><span>{% translate 'Новости' %}</span></h1>
                 </div>
             </div>
         </div>
@@ -35,12 +36,9 @@
                                 </a>
                                 <time class="news__date" datetime="{{ new.created_at }}">{{ new.created_at }}</time>
                                 {{ new.short_descr|safe }}
-
                                 <a href="{{ new.get_absolute_url }}"
-                                   class="form-btn new__btn">Подробнее</a>
+                                   class="form-btn new__btn">{% translate 'Подробнее' %}</a>
                             </div>
-
-
                         </article>
                     </div>
                 {% endfor %}
@@ -63,7 +61,6 @@
                         </li>
                     {% endif %}
 
-
                     {% for i in page_obj.paginator.page_range %}
                         {% if page_obj.number == i %}
                             <li><span aria-current="page" class="page-numbers current">{{ i }}</span></li>
@@ -82,7 +79,6 @@
                                href="?page={{ page_obj.paginator.num_pages }}">{{ page_obj.paginator.num_pages }}</a>
                         </li>
                     {% endif %}
-
 
                     {% if page_obj.has_next %}
                         <li>

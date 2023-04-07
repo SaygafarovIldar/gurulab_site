@@ -372,6 +372,15 @@ html.open {
     color: var(--white);
 }
 
+.nav__contacts {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
 .advantages__card {
     width: 100%;
     max-width: 300px;
@@ -380,10 +389,26 @@ html.open {
     flex-direction: column;
 }
 
+.lang__link {
+    display: flex;
+    padding: 10px;
+    background: var(--primaryTextColor);
+    border-radius: 10px;
+    color: var(--white);
+    border: 1px solid var(--primaryTextColor);
+}
+
+.lang__link.active {
+    background: var(--white);
+    color: var(--primaryTextColor);
+}
+
 .img {
     width: 100%;
     height: 250px;
-    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .advantages__cards {
@@ -624,12 +649,36 @@ html.open {
     opacity: 1;
 }
 
-.masters-card__img img {
-    /* min-width:0%; */
-    width: 100%;
-    object-fit: fill;
+.masters-card__img {
+    position: relative;
+    height: 400px;
 }
 
+.masters-card__img img {
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    object-position: top;
+}
+
+.masters__slide .masters-card__content {
+    transform: translateY(-30px);
+}
+
+.masters__slide {
+    transition: all 0.3s ease;
+}
+
+.masters__slide.swiper-slide-next .masters-card__content {
+    transform: translateY(0);
+}
+
+.masters-card {
+    min-height: 670px;
+    display: flex;
+    flex-direction: column;
+}
 
 .masters__slide {
     user-select: none;
@@ -638,15 +687,10 @@ html.open {
 
 .masters-card__content {
     min-height: 250px;
-    /* max-width: 400px; */
     transition: transform 0.5s ease;
-    transform: translateY(-200px);
     background-color: #f9efed;
     padding: 25px;
-}
-
-.masters__slide.swiper-slide-next .masters-card__content {
-    transform: translateY(-60px);
+    flex-grow: 1;
 }
 
 .masters-card__name {
@@ -659,6 +703,10 @@ html.open {
     font-size: 16px;
     line-height: 1.4;
     color: #2c1e1e;
+}
+
+.masters-card__descr p {
+    margin-bottom: 0;
 }
 
 #masters_slider .masters__button {
@@ -674,7 +722,7 @@ html.open {
 }
 
 .masters__swiper-wrapper {
-    padding-bottom: 40px;
+    padding-bottom: 70px;
 }
 
 /* Newsletter */
@@ -685,7 +733,6 @@ html.open {
 
 .newsletter.active {
     transform: translateX(-0);
-
 }
 
 .newsletter__col {
@@ -975,6 +1022,7 @@ html.open {
     margin: 0 auto;
     max-width: 200px;
     width: 100%;
+    text-align: center;
 }
 
 .news {
@@ -1029,7 +1077,7 @@ html.open {
 }
 
 .blog {
-    padding: 60px 0;
+    padding: 40px 0 60px;
 }
 
 .blog__title {
@@ -1114,7 +1162,7 @@ html.open {
     width: 100%;
     position: relative;
     background-color: #fff;
-    padding: 50px 0 100px;
+    padding: 50px 0;
     line-height: 1.2
 }
 
@@ -1165,4 +1213,21 @@ html.open {
     padding: 20px 0;
     max-width: 250px;
     text-transform: uppercase;
+}
+
+.dropdown__menu {
+    min-width: 350px !important;
+    background: #f3f2f4 !important;
+    border: none !important;
+    top: 65px;
+}
+
+.dropdown__menu-item {
+    align-items: center !important;
+    display: block !important;
+}
+
+.dropdown__menu-item > p {
+    color: var(--primaryTextColor) !important;
+    margin-bottom: 0 !important;
 }

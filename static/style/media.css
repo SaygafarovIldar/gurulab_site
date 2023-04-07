@@ -93,10 +93,10 @@
     .tab-item-header {
         margin-bottom: 15px;
     }
+
     .tab-item-info {
         font-size: 20px;
     }
-
 
     .content__sidebar li a {
         font-size: 18px;
@@ -143,9 +143,12 @@
         margin-bottom: 60px;
     }
 
-    .masters-card__content {
-        transform: translateY(-60px);
-        min-height: 320px;
+    .masters__slide .masters-card__content {
+        transform: translateY(0);
+    }
+
+    .masters-card {
+        min-height: 620px;
     }
 
     .header__content-leftSide_title {
@@ -187,10 +190,9 @@
 
 @media (max-width: 992px) {
 
-    .hero {
-        padding-top: 100px;
-    }
-
+    /*    .hero {
+            padding-top: 100px;
+        }*/
     .hero__title {
         font-size: 36px;
         margin: 0
@@ -482,11 +484,9 @@
         line-height: 1.3;
     }
 
-    .hero {
-        padding: 100px 0 40px
-    }
-
-
+    /*    .hero {
+            padding: 100px 0 40px
+        }*/
     .hero__text {
         margin: 0 0 20px 0;
         font-size: 16px;
@@ -615,14 +615,36 @@
         padding-bottom: 50px;
     }
 
+    .blog__title {
+        font-size: 24px;
+    }
+
+    .blog {
+        padding-top: 25px;
+    }
+
     .info-newsletter__top {
         margin-bottom: 50px;
+    }
+
+    .pagination li {
+        font-size: 24px;
+        margin: 0 14px;
+    }
+
+    .pagination li svg {
+        width: 30px;
     }
 }
 
 @media (max-width: 575.98px) {
     .hero {
         padding-top: 0;
+    }
+
+    .about__company-title {
+        font-size: 36px;
+        margin-bottom: 20px;
     }
 
     .header__lang li input {
@@ -658,13 +680,9 @@
         font-size: 18px;
     }
 
-    /*.masters-card__descr {*/
-    /*    font-size: 12px;*/
-    /*}*/
     .masters-card__content {
         min-height: auto;
     }
-
 
     .newsletter__info {
         padding-top: 25px;
@@ -679,8 +697,12 @@
         margin-top: 60px;
     }
 
+    .hero__title {
+        font-size: 28px;
+    }
+
     .main {
-        padding-top: 50px;
+        padding-top: 20px;
     }
 
     .header__content-left-title {

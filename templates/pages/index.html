@@ -10,14 +10,13 @@
     <section class="hero">
         <div class="container container--wide">
             <div class="hero__wrapper">
-                <h1 class="hero__title">
-                    ШКОЛА ДЛЯ <br>BEAUTY-МАСТЕРОВ<br> GURULAB </h1>
+                <h1 class="hero__title">{% translate 'ШКОЛА ДЛЯ <br>BEAUTY-МАСТЕРОВ<br> GURULAB' %} </h1>
                 <div class="hero__images">
                     <img src="{% static 'images/foto-1.jpg' %}" alt="image">
                     <img src="{% static 'images/foto-2.jpg' %}" alt="image">
                 </div>
-                <p class="hero__text">Обретите интересную творческую и высокооплачиваемую профессию с GuruLab!</p>
-                <a href="#contacts" class="hero-btn form-btn">Отправить заявку</a>
+                <p class="hero__text">{% translate 'Обретите интересную творческую и высокооплачиваемую профессию с GuruLab!' %}</p>
+                <a href="#contacts" class="hero-btn form-btn">{% translate 'Отправить заявку' %}</a>
             </div>
         </div>
     </section>
@@ -44,18 +43,24 @@
                     <h3 class="advantages__title">{% translate 'Преимущества обучения в GuruLab' %}</h3>
                     <div class="advantages__cards">
                         <div class="advantages__card">
-                            <div class="img"></div>
+                            <div class="img">
+                                <img src="{% static 'images/sloj-3.png' %}" alt="">
+                            </div>
                             <h3 class="advantages__card_title">{% blocktranslate %}ВЫСОКОКВАЛИФИЦИРОВАННЫЕ ПРЕПОДАВАТЕЛИ
                                 МНОГОКРАТНЫЕ ЧЕМПИОНЫ И
                                 СУДЬИ В
                                 ИНДУСТРИИ КРАСОТЫ{% endblocktranslate %}</h3>
                         </div>
                         <div class="advantages__card">
-                            <div class="img"></div>
+                            <div class="img">
+                                <img src="{% static 'images/sloj-4.png' %}" alt="">
+                            </div>
                             <h3 class="advantages__card_title">{% translate 'ДОСТУПНОЕ ОБУЧЕНИЕ С ВОЗМОЖНОСТЬЮ ГИБКОЙ ОПЛАТЫ' %}</h3>
                         </div>
                         <div class="advantages__card">
-                            <div class="img"></div>
+                            <div class="img">
+                                <img src="{% static 'images/botox_hrukkur.png' %}" alt="">
+                            </div>
                             <h3 class="advantages__card_title">{% translate '80% ПРАКТИКИ 20% ТЕОРИИ' %}</h3>
                         </div>
                     </div>
@@ -85,7 +90,7 @@
                         </div>
                     {% endfor %}
 
-                    <a href="{% url 'courses' %}" class="courses-btn form-btn mt-4">Смотреть все</a>
+                    <a href="{% url 'courses' %}" class="courses-btn form-btn mt-4">{% translate 'Смотреть все' %}</a>
                 </div>
             </div>
         </div>
@@ -104,7 +109,7 @@
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 mb-3 mb-lg-0">
                         <input type="text" autocomplete="off" name="phone_number" id=""
-                               placeholder="{% translate 'Ваш номер телефона' %}">
+                               placeholder="{% translate 'Ваш номер телефона' %}"/>
                     </div>
                     <div class="col-12 col-md-12 col-lg-4">
                         <button class="contact-form__btn form-btn" type="submit">{% translate 'Отправить' %}</button>
@@ -113,7 +118,7 @@
             </div>
         </div>
     </section>
-    <section class="section-block masters">
+    <section class="section-block masters" id="masters">
         <div class="container">
             <div class="swiper" id="masters_slider">
                 <div class="swiper-wrapper masters__swiper-wrapper">
@@ -156,7 +161,6 @@
         </div>
     </section>
     <section class="newsletter">
-
         <div class="d-flex flex-wrap">
             <div class="col-12 col-lg-6 newsletter__col">
                 <img src="{% static 'images/bg_newsletter.jpg' %}" alt="" class="newsletter__bg"/>

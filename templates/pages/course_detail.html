@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% load static %}
+{% load static i18n %}
 
 
 {% block title %}
@@ -32,8 +32,8 @@
             <div class="col-12 col-lg-8">
                 <div class="content__inner">
                     <div class="tab-item-header">
-                        <div class="tab-item-info">В группе: {{ course.students_in_group }}</div>
-                        <div class="tab-item-info">Длительность обучения: {{ course.study_duration }}</div>
+                        <div class="tab-item-info">{% translate 'В группе' %}: {{ course.students_in_group }}</div>
+                        <div class="tab-item-info">{% translate 'Длительность обучения' %}: {{ course.study_duration }}</div>
                     </div>
                     <div>
                         {{ course.content|safe }}

@@ -4,7 +4,7 @@ from .models import Course, NewItem, Master
 
 @register(Course)
 class CourseTranslationOptions(TranslationOptions):
-    fields = ("title", "content", "content_for_second_month", "study_duration", "students_in_group")
+    fields = ("title", "content", "study_duration", "students_in_group")
 
 
 @register(NewItem)

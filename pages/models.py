@@ -18,11 +18,6 @@ class Course(models.Model):
         verbose_name="Количество учеников в группе", max_length=100, default='')
     has_checkbox = models.BooleanField(help_text="Включить, если у описания статьи есть переключение между месяцами",
                                        default=False)
-    study_duration_2 = models.CharField(verbose_name="Длительность обучения",
-                                        default="", max_length=100,
-                                        help_text="Длительность обучения для второго месяца", blank=True, null=True)
-    content_for_second_month = RichTextField(
-        blank=True, null=True, help_text="Описание второго месяца статьи")
     slug = models.SlugField(
         help_text="Данное поле заполняется само при добавлении названия курса", default="")
 

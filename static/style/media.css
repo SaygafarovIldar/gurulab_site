@@ -38,25 +38,27 @@
     .nav .navbar__container {
         max-width: 1000px;
     }
-    
+
     .nav__contacts {
         gap: 15px;
     }
-    
+
     .nav__contacts form {
         gap: 0.5rem !important;
     }
-    
+
     .lang__link {
         padding: 7px;
     }
-    
+
     .navbar__container .navbar-brand {
         margin-right: 0.5rem;
     }
+
     .nav__list {
         column-gap: 5px;
     }
+
     .nav .navbar__container .nav__list .nav__list-link {
         padding-right: 0;
     }
@@ -503,6 +505,13 @@
 }
 
 @media (max-width: 768px) {
+    .tab-item-header {
+        padding-right: 0;
+    }
+
+    .tab-item-info {
+        font-size: 18px;
+    }
 
     .courses__hero-content h1 {
         font-size: 36px;

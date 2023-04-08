@@ -34,6 +34,34 @@
     }
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .nav .navbar__container {
+        max-width: 1000px;
+    }
+    
+    .nav__contacts {
+        gap: 15px;
+    }
+    
+    .nav__contacts form {
+        gap: 0.5rem !important;
+    }
+    
+    .lang__link {
+        padding: 7px;
+    }
+    
+    .navbar__container .navbar-brand {
+        margin-right: 0.5rem;
+    }
+    .nav__list {
+        column-gap: 5px;
+    }
+    .nav .navbar__container .nav__list .nav__list-link {
+        padding-right: 0;
+    }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
     .hero {
         height: auto;
@@ -96,6 +124,7 @@
 
     .tab-item-info {
         font-size: 20px;
+        margin-right: 20px;
     }
 
     .content__sidebar li a {
@@ -224,14 +253,14 @@
         right: 30px;
     }
 
-    .burger-checkbox:checked + label > .hamburger > .bar4 {
+    .burger-checkbox:checked+label>.hamburger>.bar4 {
         -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
         transform: rotate(-45deg);
         width: 20px !important;
     }
 
-    .burger-checkbox:checked + label > .hamburger > .bar1 {
+    .burger-checkbox:checked+label>.hamburger>.bar1 {
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         transform: rotate(45deg);
@@ -239,14 +268,14 @@
         width: 20px !important;
     }
 
-    .burger-checkbox:checked + label > .hamburger > .bar2 {
+    .burger-checkbox:checked+label>.hamburger>.bar2 {
         -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
         transform: rotate(-45deg);
         background-color: transparent !important;
     }
 
-    .burger-checkbox:checked + label > .hamburger > .bar3 {
+    .burger-checkbox:checked+label>.hamburger>.bar3 {
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         transform: rotate(45deg);
@@ -288,7 +317,8 @@
         transform-origin: 10%;
     }
 
-    .bar2, .bar3 {
+    .bar2,
+    .bar3 {
         top: 5px;
     }
 
@@ -650,6 +680,7 @@
         flex-direction: column;
         margin-top: 15px;
     }
+
     .tab-item-info {
         margin-right: 0;
     }

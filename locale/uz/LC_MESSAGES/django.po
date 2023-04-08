@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-07 23:40+0500\n"
+"POT-Creation-Date: 2023-04-08 16:42+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,7 +50,7 @@ msgstr "Yangiliklar"
 msgid "Контакты"
 msgstr "Kontaktlar"
 
-#: .\templates\components\_header.html:30 .\templates\pages\index.html:78
+#: .\templates\components\_header.html:30 .\templates\pages\index.html:80
 msgid "Курсы"
 msgstr "Kurslar"
 
@@ -68,40 +68,55 @@ msgstr "Guruhda"
 
 #: .\templates\pages\course_detail.html:36
 msgid "Длительность обучения"
-msgstr "GuruLabda o'qishning afzalliklari:"
+msgstr "GuruLabda o'qishning afzalliklari"
 
 #: .\templates\pages\index.html:13
 msgid "ШКОЛА ДЛЯ <br>BEAUTY-МАСТЕРОВ<br> GURULAB"
 msgstr "GURULAB <br>BEAUTY-USTALARI<br> MAKTABI"
 
-#: .\templates\pages\index.html:18
+#: .\templates\pages\index.html:19
 msgid ""
 "Обретите интересную творческую и высокооплачиваемую профессию с GuruLab!"
 msgstr "Gurulab bilan qiziqarli ijodiy va yuqori maoshli kasb egasi bo‘ling!"
 
-#: .\templates\pages\index.html:19
+#: .\templates\pages\index.html:20
 msgid "Отправить заявку"
 msgstr "Yuborish"
 
-#: .\templates\pages\index.html:25
+#: .\templates\pages\index.html:26
 msgid "О Компании"
 msgstr "Kompaniya haqida:"
 
-#: .\templates\pages\index.html:27
+#: .\templates\pages\index.html:28
+#, fuzzy
+#| msgid ""
+#| "– это огромный выбор\n"
+#| "                    курсов с нуля и на\n"
+#| "                    повышение\n"
+#| "                    квалификации в сфере красоты. Сюда входит: обучение "
+#| "косметологии, наращивание ресниц, ламинирование,\n"
+#| "                    ботокс\n"
+#| "                    и вельвет ресниц, перманентный макияж, ногтевой "
+#| "сервис и массаж лица. Наша миссия – давать только\n"
+#| "                    актуальные\n"
+#| "                    знания и создавать настоящих профессионалов своего "
+#| "дела! Вы сможете начать работу сразу после\n"
+#| "                    прохождения\n"
+#| "                    курса. "
 msgid ""
 "– это огромный выбор\n"
-"                    курсов с нуля и на\n"
-"                    повышение\n"
-"                    квалификации в сфере красоты. Сюда входит: обучение "
+"                курсов с нуля и на\n"
+"                повышение\n"
+"                квалификации в сфере красоты. Сюда входит: обучение "
 "косметологии, наращивание ресниц, ламинирование,\n"
-"                    ботокс\n"
-"                    и вельвет ресниц, перманентный макияж, ногтевой сервис и "
+"                ботокс\n"
+"                и вельвет ресниц, перманентный макияж, ногтевой сервис и "
 "массаж лица. Наша миссия – давать только\n"
-"                    актуальные\n"
-"                    знания и создавать настоящих профессионалов своего дела! "
-"Вы сможете начать работу сразу после\n"
-"                    прохождения\n"
-"                    курса. "
+"                актуальные\n"
+"                знания и создавать настоящих профессионалов своего дела! Вы "
+"сможете начать работу сразу после\n"
+"                прохождения\n"
+"                курса. "
 msgstr ""
 "- bu noldan boshlab go'zallik sohasidagi malaka oshirishgacha bo'lgan "
 "kurslarning katta tanlovidir. Bunga quyidagilar kiradi: kosmetologiya "
@@ -111,92 +126,221 @@ msgstr ""
 "mutaxassislarini yaratishdir! Kursni tugatgandan so'ng Siz darhol ish "
 "boshlashingiz mumkin."
 
-#: .\templates\pages\index.html:37
+#: .\templates\pages\index.html:38
+#, fuzzy
+#| msgid ""
+#| "За многолетний опыт работы наши спикеры учли\n"
+#| "                    ошибки альтернативных\n"
+#| "                    курсов и сделали свои уроки максимально эффективными. "
+#| "Обучение наполнено практикой, отсутствует вода\n"
+#| "                    и\n"
+#| "                    ненужная информация."
 msgid ""
 "За многолетний опыт работы наши спикеры учли\n"
-"                    ошибки альтернативных\n"
-"                    курсов и сделали свои уроки максимально эффективными. "
+"                ошибки альтернативных\n"
+"                курсов и сделали свои уроки максимально эффективными. "
 "Обучение наполнено практикой, отсутствует вода\n"
-"                    и\n"
-"                    ненужная информация."
+"                и\n"
+"                ненужная информация."
 msgstr ""
 "Ko'p yillik tajriba davomida spikerlarimiz  muqobil kurslarning xatolarini "
 "inobatga olib, mashg‘ulotlarni maksimal darajada samarali qilishdi. Ta'lim "
 "suv va keraksiz ma'lumotlardan holi bo‘lib,amaliyot bilan to‘ldirilgan."
 
-#: .\templates\pages\index.html:43
+#: .\templates\pages\index.html:44
 msgid "Преимущества обучения в GuruLab"
 msgstr "GuruLabda o'qishning afzalliklari:"
 
-#: .\templates\pages\index.html:49
+#: .\templates\pages\index.html:50
+#, fuzzy
+#| msgid ""
+#| "ВЫСОКОКВАЛИФИЦИРОВАННЫЕ ПРЕПОДАВАТЕЛИ\n"
+#| "                                МНОГОКРАТНЫЕ ЧЕМПИОНЫ И\n"
+#| "                                СУДЬИ В\n"
+#| "                                ИНДУСТРИИ КРАСОТЫ"
 msgid ""
 "ВЫСОКОКВАЛИФИЦИРОВАННЫЕ ПРЕПОДАВАТЕЛИ\n"
-"                                МНОГОКРАТНЫЕ ЧЕМПИОНЫ И\n"
-"                                СУДЬИ В\n"
-"                                ИНДУСТРИИ КРАСОТЫ"
+"                            МНОГОКРАТНЫЕ ЧЕМПИОНЫ И\n"
+"                            СУДЬИ В\n"
+"                            ИНДУСТРИИ КРАСОТЫ"
 msgstr ""
 "YUKORI MALAKALI O'QITUVCHILARGO'ZO'LLIK INDUSTRIUASINING  KO'P  KARRA "
 "CHEMPION VA HAKAMLARI!"
 
-#: .\templates\pages\index.html:58
+#: .\templates\pages\index.html:60
 msgid "ДОСТУПНОЕ ОБУЧЕНИЕ С ВОЗМОЖНОСТЬЮ ГИБКОЙ ОПЛАТЫ"
 msgstr "MOSLANUVCHAN  TO‘LOVLI KENG IMKONIYATLI TA'LIM!"
 
-#: .\templates\pages\index.html:64
+#: .\templates\pages\index.html:66
+#, fuzzy, python-format
+#| msgid "80%% ПРАКТИКИ 20%% ТЕОРИИ"
 msgid "80%% ПРАКТИКИ 20%% ТЕОРИИ"
 msgstr "80%  AMALIYOT 20%  NAZARIOT"
 
-#: .\templates\pages\index.html:68
+#: .\templates\pages\index.html:70
+#, fuzzy
+#| msgid ""
+#| "Курсы проводятся на русском и узбекском языках.\n"
+#| "                            Наши преподаватели – наша\n"
+#| "                            гордость! Стаж работы не менее 7 лет и до 20 "
+#| "лет стажа."
 msgid ""
 "Курсы проводятся на русском и узбекском языках.\n"
-"                            Наши преподаватели – наша\n"
-"                            гордость! Стаж работы не менее 7 лет и до 20 лет "
+"                        Наши преподаватели – наша\n"
+"                        гордость! Стаж работы не менее 7 лет и до 20 лет "
 "стажа."
 msgstr ""
 "Kurslar rus va o'zbek tillarida olib boriladi. Muallimlarimiz- bizning "
 "faxrimiz!7 yildan 20 yilgacha ish tajribasiga ega bo‘lgan mutaxassislardir"
 
-#: .\templates\pages\index.html:93
+#: .\templates\pages\index.html:94 .\templates\pages\index.html:293
 msgid "Смотреть все"
 msgstr "Kurslarni ko‘rish"
 
-#: .\templates\pages\index.html:102
+#: .\templates\pages\index.html:103
+#, fuzzy
+#| msgid ""
+#| "Хотите получить более подробную информацию? <br/> Наш менеджер готов "
+#| "помочь\n"
+#| "                        вам!"
 msgid ""
-"Хотите получить более подробную информацию? <br/> Наш менеджер готов помочь\n"
-"                        вам!"
-msgstr "Qo'shimcha ma'lumot olishni xohlaysizmi?<br/> Bizning menejerimiz Sizga "
+"Хотите получить более подробную информацию? <br /> Наш менеджер готов "
+"помочь\n"
+"                вам!"
+msgstr ""
+"Qo'shimcha ma'lumot olishni xohlaysizmi?<br/> Bizning menejerimiz Sizga "
 "yordam berishga tayyor!"
 
-#: .\templates\pages\index.html:108 .\templates\pages\index.html:175
+#: .\templates\pages\index.html:109 .\templates\pages\index.html:173
 msgid "Ваше имя"
 msgstr "Sizning ismingiz?"
 
-#: .\templates\pages\index.html:112
+#: .\templates\pages\index.html:113
 msgid "Ваш номер телефона"
 msgstr "Telefon raqamingiz."
 
-#: .\templates\pages\index.html:115 .\templates\pages\index.html:178
+#: .\templates\pages\index.html:116 .\templates\pages\index.html:175
 msgid "Отправить"
 msgstr "Yuborish"
 
-#: .\templates\pages\index.html:169
+#: .\templates\pages\index.html:167
 msgid "ОБРАТНАЯ СВЯЗЬ"
 msgstr "Bog‘lanish uchun"
 
-#: .\templates\pages\index.html:171
+#: .\templates\pages\index.html:169
 msgid "Есть Вопросы? Оставьте Заявку"
 msgstr "Savollaringiz bormi? Mutojaat qoldiring!"
 
-#: .\templates\pages\index.html:177
+#: .\templates\pages\index.html:174
 msgid "Номер телефона"
 msgstr "Telefon raqami"
 
-#: .\templates\pages\index.html:280
+#: .\templates\pages\index.html:275
+#, fuzzy
+#| msgid ""
+#| "Красота начинается в тот момент,<br> когда ты решишь быть\n"
+#| "                    собой."
 msgid ""
 "Красота начинается в тот момент,<br> когда ты решишь быть\n"
-"                    собой."
+"                собой."
 msgstr "Go'zallik siz o'zingiz bo'lishga <br> qaror qilgan paytdan boshlanadi."
+
+#: .\templates\pages\index.html:310
+msgid "Скрыть"
+msgstr "Yashirish"
 
 #: .\templates\pages\news.html:40
 msgid "Подробнее"
 msgstr "Batafsil"
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:5
+msgid "Select an image to embed"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:27
+msgid "Browse for the image you want, then click 'Embed Image' to continue..."
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:29
+msgid ""
+"No images found. Upload images using the 'Image Button' dialog's 'Upload' "
+"tab."
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:50
+msgid "Images in: "
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:62
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:80
+msgid "Embed Image"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:146
+msgid "Play Slideshow"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:147
+msgid "Pause Slideshow"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:148
+msgid "&lsaquo; Previous Photo"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:149
+msgid "Next Photo &rsaquo;"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:150
+msgid "Next &rsaquo;"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:151
+msgid "&lsaquo; Prev"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:7
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:221
+msgid "The install worked successfully! Congratulations!"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:207
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:222
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
+"\">DEBUG=True</a> is in your settings file and you have not configured any "
+"URLs."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:230
+msgid "Django Documentation"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:231
+msgid "Topics, references, &amp; how-to’s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:239
+msgid "Tutorial: A Polling App"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:240
+msgid "Get started with Django"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:248
+msgid "Django Community"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:249
+msgid "Connect, get help, or contribute"
+msgstr ""

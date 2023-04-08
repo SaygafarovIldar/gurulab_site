@@ -90,3 +90,12 @@ document.addEventListener("DOMContentLoaded", (function () {
     }))
 }))
 
+const showMoreBtn = document.querySelector(".courses-btn--show");
+const hideBtn = document.querySelector(".courses-btn--hide");
+moreBtn.addEventListener('click', function () {
+    this.classList.add("d-none");
+})
+
+hideBtn.addEventListener('click', function () {
+    showMoreBtn.classList.remove("d-none")
+})

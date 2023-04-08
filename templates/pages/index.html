@@ -3,306 +3,324 @@
 
 
 {% block title %}
-    Gurulab
+Gurulab
 {% endblock title %}
 
 {% block content %}
-    <section class="hero">
-        <div class="container container--wide">
-            <div class="hero__wrapper">
-                <h1 class="hero__title">{% translate 'ШКОЛА ДЛЯ <br>BEAUTY-МАСТЕРОВ<br> GURULAB' %} </h1>
-                <div class="hero__images">
-                    <img src="{% static 'images/foto-1.jpg' %}" alt="image">
-                    <img src="{% static 'images/foto-2.jpg' %}" alt="image">
-                </div>
-                <p class="hero__text">{% translate 'Обретите интересную творческую и высокооплачиваемую профессию с GuruLab!' %}</p>
-                <a href="#contacts" class="hero-btn form-btn">{% translate 'Отправить заявку' %}</a>
+<section class="hero">
+    <div class="container container--wide">
+        <div class="hero__wrapper">
+            <h1 class="hero__title">{% translate 'ШКОЛА ДЛЯ <br>BEAUTY-МАСТЕРОВ<br> GURULAB' %} </h1>
+            <div class="hero__images">
+                <img src="{% static 'images/foto-1.jpg' %}" alt="image">
+                <img src="{% static 'images/foto-2.jpg' %}" alt="image">
             </div>
+            <p class="hero__text">
+                {% translate 'Обретите интересную творческую и высокооплачиваемую профессию с GuruLab!' %}</p>
+            <a href="#contacts" class="hero-btn form-btn">{% translate 'Отправить заявку' %}</a>
         </div>
-    </section>
-    <section class="section-block about__company" id="about__company">
-        <div class="container">
-            <h2 class="about__company-title">{% translate 'О Компании' %}</h2>
-            <div class="about__company-content">
-                <p class="about__company-content-text"><span>GuruLab</span> {% blocktranslate %}– это огромный выбор
-                    курсов с нуля и на
-                    повышение
-                    квалификации в сфере красоты. Сюда входит: обучение косметологии, наращивание ресниц, ламинирование,
-                    ботокс
-                    и вельвет ресниц, перманентный макияж, ногтевой сервис и массаж лица. Наша миссия – давать только
-                    актуальные
-                    знания и создавать настоящих профессионалов своего дела! Вы сможете начать работу сразу после
-                    прохождения
-                    курса. {% endblocktranslate %}</p>
-                <p class="about__company-content-text">{% blocktranslate %}За многолетний опыт работы наши спикеры учли
-                    ошибки альтернативных
-                    курсов и сделали свои уроки максимально эффективными. Обучение наполнено практикой, отсутствует вода
-                    и
-                    ненужная информация.{% endblocktranslate %}</p>
-                <div class="about__company-content-advantages">
-                    <h3 class="advantages__title">{% translate 'Преимущества обучения в GuruLab' %}</h3>
-                    <div class="advantages__cards">
-                        <div class="advantages__card">
-                            <div class="img">
-                                <img src="{% static 'images/sloj-3.png' %}" alt="">
-                            </div>
-                            <h3 class="advantages__card_title">{% blocktranslate %}ВЫСОКОКВАЛИФИЦИРОВАННЫЕ ПРЕПОДАВАТЕЛИ
-                                МНОГОКРАТНЫЕ ЧЕМПИОНЫ И
-                                СУДЬИ В
-                                ИНДУСТРИИ КРАСОТЫ{% endblocktranslate %}</h3>
+    </div>
+</section>
+<section class="section-block about__company" id="about__company">
+    <div class="container">
+        <h2 class="about__company-title">{% translate 'О Компании' %}</h2>
+        <div class="about__company-content">
+            <p class="about__company-content-text"><span>GuruLab</span> {% blocktranslate %}– это огромный выбор
+                курсов с нуля и на
+                повышение
+                квалификации в сфере красоты. Сюда входит: обучение косметологии, наращивание ресниц, ламинирование,
+                ботокс
+                и вельвет ресниц, перманентный макияж, ногтевой сервис и массаж лица. Наша миссия – давать только
+                актуальные
+                знания и создавать настоящих профессионалов своего дела! Вы сможете начать работу сразу после
+                прохождения
+                курса. {% endblocktranslate %}</p>
+            <p class="about__company-content-text">{% blocktranslate %}За многолетний опыт работы наши спикеры учли
+                ошибки альтернативных
+                курсов и сделали свои уроки максимально эффективными. Обучение наполнено практикой, отсутствует вода
+                и
+                ненужная информация.{% endblocktranslate %}</p>
+            <div class="about__company-content-advantages">
+                <h3 class="advantages__title">{% translate 'Преимущества обучения в GuruLab' %}</h3>
+                <div class="advantages__cards">
+                    <div class="advantages__card">
+                        <div class="img">
+                            <img src="{% static 'images/sloj-3.png' %}" alt="">
                         </div>
-                        <div class="advantages__card">
-                            <div class="img">
-                                <img src="{% static 'images/sloj-4.png' %}" alt="">
-                            </div>
-                            <h3 class="advantages__card_title">{% translate 'ДОСТУПНОЕ ОБУЧЕНИЕ С ВОЗМОЖНОСТЬЮ ГИБКОЙ ОПЛАТЫ' %}</h3>
-                        </div>
-                        <div class="advantages__card">
-                            <div class="img">
-                                <img src="{% static 'images/botox_hrukkur.png' %}" alt="">
-                            </div>
-                            <h3 class="advantages__card_title">{% translate '80% ПРАКТИКИ 20% ТЕОРИИ' %}</h3>
-                        </div>
+                        <h3 class="advantages__card_title">{% blocktranslate %}ВЫСОКОКВАЛИФИЦИРОВАННЫЕ ПРЕПОДАВАТЕЛИ
+                            МНОГОКРАТНЫЕ ЧЕМПИОНЫ И
+                            СУДЬИ В
+                            ИНДУСТРИИ КРАСОТЫ{% endblocktranslate %}</h3>
                     </div>
-                    <div class="advantages__text">
-                        <p id="advantages__text">{% blocktranslate %}Курсы проводятся на русском и узбекском языках.
-                            Наши преподаватели – наша
-                            гордость! Стаж работы не менее 7 лет и до 20 лет стажа.{% endblocktranslate %}</p>
+                    <div class="advantages__card">
+                        <div class="img">
+                            <img src="{% static 'images/sloj-4.png' %}" alt="">
+                        </div>
+                        <h3 class="advantages__card_title">
+                            {% translate 'ДОСТУПНОЕ ОБУЧЕНИЕ С ВОЗМОЖНОСТЬЮ ГИБКОЙ ОПЛАТЫ' %}</h3>
+                    </div>
+                    <div class="advantages__card">
+                        <div class="img">
+                            <img src="{% static 'images/botox_hrukkur.png' %}" alt="">
+                        </div>
+                        <h3 class="advantages__card_title">{% translate '80% ПРАКТИКИ 20% ТЕОРИИ' %}</h3>
                     </div>
                 </div>
+                <div class="advantages__text">
+                    <p id="advantages__text">{% blocktranslate %}Курсы проводятся на русском и узбекском языках.
+                        Наши преподаватели – наша
+                        гордость! Стаж работы не менее 7 лет и до 20 лет стажа.{% endblocktranslate %}</p>
+                </div>
             </div>
         </div>
-    </section>
-    <section class="courses" id="courses">
-        <div class="container">
-            <h2 class="courses-title">{% translate 'Курсы' %}</h2>
-            <div class="courses__wrapper">
-                <div class="row">
-                    {% for course in courses %}
-                        <div class="col-12 col-sm-6 col-lg-3 mb-2 mb-sm-2">
-                            <div class="courses__item">
-                                <a href="{{ course.get_absolute_url }}" class="courses__img">
-                                    <img src="{{ course.get_preview_image }}" alt="{{ course.title }}"/>
-                                </a>
-                                <a href="{{ course.get_absolute_url }}"
-                                   class="courses__title">{{ course.title|title }}</a>
-                            </div>
-                        </div>
-                    {% endfor %}
+    </div>
+</section>
+<section class="courses" id="courses">
+    <div class="container">
+        <h2 class="courses-title">{% translate 'Курсы' %}</h2>
+        <div class="courses__wrapper">
+            <div class="row">
+                {% for course in courses %}
+                <div class="col-12 col-sm-6 col-lg-3 mb-2 mb-sm-2">
+                    <div class="courses__item">
+                        <a href="{{ course.get_absolute_url }}" class="courses__img">
+                            <img src="{{ course.get_preview_image }}" alt="{{ course.title }}" />
+                        </a>
+                        <a href="{{ course.get_absolute_url }}" class="courses__title">{{ course.title|title }}</a>
+                    </div>
+                </div>
+                {% endfor %}
 
-                    <a href="{% url 'courses' %}" class="courses-btn form-btn mt-4">{% translate 'Смотреть все' %}</a>
+                <a href="{% url 'courses' %}" class="courses-btn form-btn mt-4">{% translate 'Смотреть все' %}</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact-section" id="contacts">
+    <div class="container">
+        <div class="contact-section__wrapper">
+            <h2 class="contact-section__title">
+                {% blocktranslate %}Хотите получить более подробную информацию? <br /> Наш менеджер готов помочь
+                вам!{% endblocktranslate %}
+            </h2>
+            <form action="" class="contact-section__form contact-form row">
+                <div class="col-12 col-md-6 col-lg-4 mb-3 mb-lg-0">
+                    <input type="text" autocomplete="off" name="username" id=""
+                        placeholder="{% translate 'Ваше имя' %}">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3 mb-lg-0">
+                    <input type="text" autocomplete="off" name="phone_number" id=""
+                        placeholder="{% translate 'Ваш номер телефона' %}" />
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <button class="contact-form__btn form-btn" type="submit">{% translate 'Отправить' %}</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="section-block masters" id="masters">
+    <div class="container">
+        <div class="swiper" id="masters_slider">
+            <div class="swiper-wrapper masters__swiper-wrapper">
+                {% for master in masters %}
+                <div class="swiper-slide masters__slide">
+                    <div class="masters__card masters-card">
+                        <div class="masters-card__img">
+                            <img src="{{ master.photo.url }}" alt="{{ master.name }}" />
+                        </div>
+                        <div class="masters-card__content">
+                            <h3 class="masters-card__name">{{ master.name|safe }}</h3>
+                            <div class="masters-card__descr">
+                                {{ master.content|safe }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="slider-buttons d-flex gap-3 justify-content-center">
+                <div class="masters__button masters__button--prev swiper-button-prev">
+                    <svg width="58" height="28" viewBox="0 0 58 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 28C14 20.268 7.73199 14 -1.78814e-07 14" stroke="#F9EFED" stroke-width="2"></path>
+                        <path d="M-1.78814e-07 14C7.73199 14 14 7.73199 14 0" stroke="#F9EFED" stroke-width="2"></path>
+                        <path d="M0.619141 14L57.9998 14" stroke="#F9EFED" stroke-width="2"></path>
+                    </svg>
+                </div>
+                <div class="masters__button masters__button--next swiper-button-next">
+                    <svg width="58" height="28" viewBox="0 0 58 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M44 28C44 20.268 50.268 14 58 14" stroke="#F9EFED" stroke-width="2"></path>
+                        <path d="M58 14C50.268 14 44 7.73199 44 0" stroke="#F9EFED" stroke-width="2"></path>
+                        <path d="M57.3809 14L0.000237942 14" stroke="#F9EFED" stroke-width="2"></path>
+                    </svg>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="contact-section" id="contacts">
-        <div class="container">
-            <div class="contact-section__wrapper">
-                <h2 class="contact-section__title">
-                    {% blocktranslate %}Хотите получить более подробную информацию? <br/> Наш менеджер готов помочь
-                        вам!{% endblocktranslate %}
-                </h2>
-                <form action="" class="contact-section__form contact-form row">
-                    <div class="col-12 col-md-6 col-lg-4 mb-3 mb-lg-0">
-                        <input type="text" autocomplete="off" name="username" id=""
-                               placeholder="{% translate 'Ваше имя' %}">
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mb-3 mb-lg-0">
-                        <input type="text" autocomplete="off" name="phone_number" id=""
-                               placeholder="{% translate 'Ваш номер телефона' %}"/>
-                    </div>
-                    <div class="col-12 col-md-12 col-lg-4">
-                        <button class="contact-form__btn form-btn" type="submit">{% translate 'Отправить' %}</button>
-                    </div>
+    </div>
+</section>
+<section class="newsletter">
+    <div class="d-flex flex-wrap">
+        <div class="col-12 col-lg-6 newsletter__col">
+            <img src="{% static 'images/bg_newsletter.jpg' %}" alt="" class="newsletter__bg" />
+            <div class="newsletter__info info-newsletter">
+                <div class="info-newsletter__top">
+                    <span class="info-newsletter__text">{% translate 'ОБРАТНАЯ СВЯЗЬ' %}</span>
+                    <h3 class="info-newsletter__title">
+                        {% translate 'Есть Вопросы? Оставьте Заявку' %}
+                    </h3>
+                </div>
+                <form action="" class="newsletter-form">
+                    <input type="text" class="newsletter-form__input" placeholder="{% translate 'Ваше имя' %}">
+                    <input type="text" class="newsletter-form__input" placeholder="{% translate 'Номер телефона' %}">
+                    <button class="newsletter-form__btn form-btn" type="submit">{% translate 'Отправить' %}</button>
                 </form>
             </div>
         </div>
-    </section>
-    <section class="section-block masters" id="masters">
-        <div class="container">
-            <div class="swiper" id="masters_slider">
-                <div class="swiper-wrapper masters__swiper-wrapper">
-                    {% for master in masters %}
-                        <div class="swiper-slide masters__slide">
-                            <div class="masters__card masters-card">
-                                <div class="masters-card__img">
-                                    <img src="{{ master.photo.url }}"
-                                         alt="{{ master.name }}"/>
-                                </div>
-                                <div class="masters-card__content">
-                                    <h3 class="masters-card__name">{{ master.name|safe }}</h3>
-                                    <div class="masters-card__descr">
-                                        {{ master.content|safe }}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    {% endfor %}
-                </div>
-                <div class="slider-buttons d-flex gap-3 justify-content-center">
-                    <div class="masters__button masters__button--prev swiper-button-prev">
-                        <svg width="58" height="28" viewBox="0 0 58 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14 28C14 20.268 7.73199 14 -1.78814e-07 14" stroke="#F9EFED"
-                                  stroke-width="2"></path>
-                            <path d="M-1.78814e-07 14C7.73199 14 14 7.73199 14 0" stroke="#F9EFED"
-                                  stroke-width="2"></path>
-                            <path d="M0.619141 14L57.9998 14" stroke="#F9EFED" stroke-width="2"></path>
-                        </svg>
-                    </div>
-                    <div class="masters__button masters__button--next swiper-button-next">
-                        <svg width="58" height="28" viewBox="0 0 58 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M44 28C44 20.268 50.268 14 58 14" stroke="#F9EFED" stroke-width="2"></path>
-                            <path d="M58 14C50.268 14 44 7.73199 44 0" stroke="#F9EFED" stroke-width="2"></path>
-                            <path d="M57.3809 14L0.000237942 14" stroke="#F9EFED" stroke-width="2"></path>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="newsletter">
-        <div class="d-flex flex-wrap">
-            <div class="col-12 col-lg-6 newsletter__col">
-                <img src="{% static 'images/bg_newsletter.jpg' %}" alt="" class="newsletter__bg"/>
-                <div class="newsletter__info info-newsletter">
-                    <div class="info-newsletter__top">
-                        <span class="info-newsletter__text">{% translate 'ОБРАТНАЯ СВЯЗЬ' %}</span>
-                        <h3 class="info-newsletter__title">
-                            {% translate 'Есть Вопросы? Оставьте Заявку' %}
-                        </h3>
-                    </div>
-                    <form action="" class="newsletter-form">
-                        <input type="text" class="newsletter-form__input" placeholder="{% translate 'Ваше имя' %}">
-                        <input type="text" class="newsletter-form__input"
-                               placeholder="{% translate 'Номер телефона' %}">
-                        <button class="newsletter-form__btn form-btn" type="submit">{% translate 'Отправить' %}</button>
-                    </form>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6 newsletter__map">
+        <div class="col-12 col-lg-6 newsletter__map">
 
-                <script>
-                    if (typeof (YaMapsWP) === "undefined") {
-                        var YaMapsWP = {},
-                            YMlisteners = {};
-                        var YaMapsScript = document.createElement("script");
-                        var YaMapsScriptCounter = [];
-                    }
-                    var myMap0;
+            <script>
+                if (typeof (YaMapsWP) === "undefined") {
+                    var YaMapsWP = {},
+                        YMlisteners = {};
+                    var YaMapsScript = document.createElement("script");
+                    var YaMapsScriptCounter = [];
+                }
+                var myMap0;
+            </script>
+            <script type="text/javascript">
+                document.addEventListener("DOMContentLoaded", function () {
+                    if (document.getElementById("YandexMapAPI-js") == null) {
+                        YaMapsScriptCounter.push(function () {
+                            ymaps.ready(init)
+                        });
+                        if (document.getElementById("YandexMapAPI-alt-js") == null) {
+                            function AltApiLoad(src) {
 
-                </script>
-                <script type="text/javascript">
-                    document.addEventListener("DOMContentLoaded", function () {
-                        if (document.getElementById("YandexMapAPI-js") == null) {
-                            YaMapsScriptCounter.push(function () {
-                                ymaps.ready(init)
-                            });
-                            if (document.getElementById("YandexMapAPI-alt-js") == null) {
-                                function AltApiLoad(src) {
+                                YaMapsScript.id = "YandexMapAPI-alt-js";
+                                YaMapsScript.src = src;
+                                YaMapsScript.async = false;
+                                document.head.appendChild(YaMapsScript);
 
-                                    YaMapsScript.id = "YandexMapAPI-alt-js";
-                                    YaMapsScript.src = src;
-                                    YaMapsScript.async = false;
-                                    document.head.appendChild(YaMapsScript);
-
-                                }
-
-                                AltApiLoad("https://api-maps.yandex.ru/2.1/?lang=ru_RU");
-
-                                window.onload = function () {
-                                    YaMapsScriptCounter.forEach(function (entryFunc) {
-                                        entryFunc();
-                                    });
-                                }
                             }
 
+                            AltApiLoad("https://api-maps.yandex.ru/2.1/?lang=ru_RU");
 
-                        } else {
-                            ymaps.ready(init);
+                            window.onload = function () {
+                                YaMapsScriptCounter.forEach(function (entryFunc) {
+                                    entryFunc();
+                                });
+                            }
                         }
 
 
-                        YMlisteners.myMap0 = {};
-                        YaMapsWP.myMap0 = {
-                            center: "41.2967,69.2610",
-                            zoom: "15",
+                    } else {
+                        ymaps.ready(init);
+                    }
+
+
+                    YMlisteners.myMap0 = {};
+                    YaMapsWP.myMap0 = {
+                        center: "41.2967,69.2610",
+                        zoom: "15",
+                        type: "yandex#map",
+                        controls: "",
+                        places: {}
+                    };
+
+                    var yamapsonclick = function (url) {
+                        location.href = url;
+                    }
+
+                    function init() {
+                        myMap0 = new ymaps.Map("yamap0", {
+                            center: [41.2967, 69.2610],
+                            zoom: 15,
                             type: "yandex#map",
-                            controls: "",
-                            places: {}
+                            controls: [],
+
+                        }, {
+                            suppressMapOpenBlock: true
+                        });
+
+
+                        YaMapsWP.myMap0.places.placemark1 = {
+                            icon: "islands#dotIcon",
+                            name: "",
+                            color: "#1e98ff",
+                            coord: "41.29673246018383,69.26069497176731",
+                            url: "",
                         };
+                        myMap0placemark1 = new ymaps.Placemark([41.29673246018383, 69.26069497176731], {
+                            hintContent: "",
+                            iconContent: "",
+                        }, {
+                            preset: "islands#dotIcon",
+                            iconColor: "#1e98ff",
+                        });
+                        myMap0.geoObjects.add(myMap0placemark1);
+                        myMap0.behaviors.disable('scrollZoom');
 
-                        var yamapsonclick = function (url) {
-                            location.href = url;
-                        }
+                    }
+                }, false);
+            </script>
 
-                        function init() {
-                            myMap0 = new ymaps.Map("yamap0", {
-                                center: [41.2967, 69.2610],
-                                zoom: 15,
-                                type: "yandex#map",
-                                controls: [],
-
-                            }, {
-                                suppressMapOpenBlock: true
-                            });
-
-
-                            YaMapsWP.myMap0.places.placemark1 = {
-                                icon: "islands#dotIcon",
-                                name: "",
-                                color: "#1e98ff",
-                                coord: "41.29673246018383,69.26069497176731",
-                                url: "",
-                            };
-                            myMap0placemark1 = new ymaps.Placemark([41.29673246018383, 69.26069497176731], {
-                                hintContent: "",
-                                iconContent: "",
-                            }, {
-                                preset: "islands#dotIcon",
-                                iconColor: "#1e98ff",
-                            });
-                            myMap0.geoObjects.add(myMap0placemark1);
-                            myMap0.behaviors.disable('scrollZoom');
-
-                        }
-                    }, false);
-
-                </script>
-
-                <div id="yamap0" style="position: relative; min-height: 100%; margin-bottom: 0px !important;">
-                </div>
+            <div id="yamap0" style="position: relative; min-height: 100%; margin-bottom: 0px !important;">
             </div>
         </div>
-    </section>
-    <section class="section-quote">
-        <div class="container">
-            <div class="section-quote__title">
-                <h3>{% blocktranslate %}Красота начинается в тот момент,<br> когда ты решишь быть
-                    собой.{% endblocktranslate %}</h3>
-                <span>GuruLab</span>
-            </div>
-            <div class="section-quote__content">
-                <div class="container-lg container-fluid">
-                    <div class="row justify-content-center text-center row-gap-3 row-gap-lg-0">
-                        <div class="col-12 col-sm-6 col-lg-4">
-                            <img class="section-quote__img"
-                                 src="{% static 'images/quotes/guru-1-1.jpg' %}"
-                                 alt="img-quote">
+    </div>
+</section>
+<section class="section-quote">
+    <div class="container">
+        <div class="section-quote__title">
+            <h3>{% blocktranslate %}Красота начинается в тот момент,<br> когда ты решишь быть
+                собой.{% endblocktranslate %}</h3>
+            <span>GuruLab</span>
+        </div>
+        <div class="section-quote__content">
+            <div class="container-lg container-fluid">
+                <div class="row justify-content-center text-center row-gap-3">
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="section-quote__photo">
+                            <img class="section-quote__img" src="{% static 'images/quotes/guru-1-1.jpg' %}"
+                                alt="img-quote">
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-4">
-                            <img class="section-quote__img"
-                                 src="{% static 'images/quotes/guru-3.jpg' %}"
-                                 alt="img-quote">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="section-quote__photo">
+                            <img class="section-quote__img" src="{% static 'images/quotes/guru-3.jpg' %}"
+                                alt="img-quote">
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-4">
-                            <img class="section-quote__img"
-                                 src="{% static 'images/quotes/guru-2-1.jpg' %}"
-                                 alt="img-quote">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="section-quote__photo">
+                            <img class="section-quote__img" src="{% static 'images/quotes/guru-2-1.jpg' %}"
+                                alt="img-quote">
+                        </div>
+                    </div>
+                    <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                        aria-controls="collapseExample"
+                        class="courses-btn courses-btn--show form-btn mt-4">{% translate 'Смотреть все' %}</a>
+                    <div class="collapse" id="collapseExample">
+                        <div class="row justify-content-center text-center row-gap-3">
+                            {% for image in images %}
+                            <div class="col-12 col-sm-6 col-lg-4">
+                                <div class="section-quote__photo">
+                                    <img class="section-quote__img" src="{% static image %}" alt="img-quote">
+                                </div>
+                            </div>
+                            {% endfor %}
+                            <div class="col-12">
+                                <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded=""
+                                    aria-controls="collapseExample"
+                                    class="courses-btn courses-btn--hide form-btn mt-4">{% translate 'Скрыть' %}</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
+
+
         </div>
-    </section>
+    </div>
+</section>
 {% endblock content %}

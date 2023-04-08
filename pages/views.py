@@ -8,10 +8,12 @@ from .models import Master, Course, NewItem
 def index_view(request):
     masters = Master.objects.all()
     courses = Course.objects.all()[:4]
+    images = [f"images/index_more/{i}.webp" for i in range(1, 20)]
 
     context = {
         "masters": masters,
-        "courses": courses
+        "courses": courses,
+        "images": images
     }
     return render(request, "pages/index.html", context)
 

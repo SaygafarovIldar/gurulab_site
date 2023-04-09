@@ -84,7 +84,7 @@ Gurulab
                 <div class="col-12 col-sm-6 col-lg-3 mb-2 mb-sm-2">
                     <div class="courses__item">
                         <a href="{{ course.get_absolute_url }}" class="courses__img">
-                            <img src="{{ course.get_preview_image }}" alt="{{ course.title }}" />
+                            <img src="{{ course.get_preview_image }}" alt="{{ course.title }}"/>
                         </a>
                         <a href="{{ course.get_absolute_url }}" class="courses__title">{{ course.title|title }}</a>
                     </div>
@@ -100,17 +100,17 @@ Gurulab
     <div class="container">
         <div class="contact-section__wrapper">
             <h2 class="contact-section__title">
-                {% blocktranslate %}Хотите получить более подробную информацию? <br /> Наш менеджер готов помочь
+                {% blocktranslate %}Хотите получить более подробную информацию? <br/> Наш менеджер готов помочь
                 вам!{% endblocktranslate %}
             </h2>
             <form action="" class="contact-section__form contact-form row">
                 <div class="col-12 col-md-6 col-lg-4 mb-3 mb-lg-0">
                     <input type="text" autocomplete="off" name="username" id=""
-                        placeholder="{% translate 'Ваше имя' %}">
+                           placeholder="{% translate 'Ваше имя' %}">
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 mb-3 mb-lg-0">
                     <input type="text" autocomplete="off" name="phone_number" id=""
-                        placeholder="{% translate 'Ваш номер телефона' %}" />
+                           placeholder="{% translate 'Ваш номер телефона' %}"/>
                 </div>
                 <div class="col-12 col-md-12 col-lg-4">
                     <button class="contact-form__btn form-btn" type="submit">{% translate 'Отправить' %}</button>
@@ -127,7 +127,7 @@ Gurulab
                 <div class="swiper-slide masters__slide">
                     <div class="masters__card masters-card">
                         <div class="masters-card__img">
-                            <img src="{{ master.photo.url }}" alt="{{ master.name }}" />
+                            <img src="{{ master.photo.url }}" alt="{{ master.name }}"/>
                         </div>
                         <div class="masters-card__content">
                             <h3 class="masters-card__name">{{ master.name|safe }}</h3>
@@ -161,7 +161,7 @@ Gurulab
 <section class="newsletter">
     <div class="d-flex flex-wrap">
         <div class="col-12 col-lg-6 newsletter__col">
-            <img src="{% static 'images/bg_newsletter.jpg' %}" alt="" class="newsletter__bg" />
+            <img src="{% static 'images/bg_newsletter.jpg' %}" alt="" class="newsletter__bg"/>
             <div class="newsletter__info info-newsletter">
                 <div class="info-newsletter__top">
                     <span class="info-newsletter__text">{% translate 'ОБРАТНАЯ СВЯЗЬ' %}</span>
@@ -282,37 +282,39 @@ Gurulab
                     <div class="col-12 col-sm-6 col-lg-4">
                         <div class="section-quote__photo">
                             <img class="section-quote__img" src="{% static 'images/quotes/guru-1-1.jpg' %}"
-                                alt="img-quote">
+                                 alt="img-quote">
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4">
                         <div class="section-quote__photo">
                             <img class="section-quote__img" src="{% static 'images/quotes/guru-3.jpg' %}"
-                                alt="img-quote">
+                                 alt="img-quote">
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4">
                         <div class="section-quote__photo">
                             <img class="section-quote__img" src="{% static 'images/quotes/guru-2-1.jpg' %}"
-                                alt="img-quote">
+                                 alt="img-quote">
                         </div>
                     </div>
-                    <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-                        aria-controls="collapseExample"
-                        class="courses-btn courses-btn--show form-btn mt-4">{% translate 'Смотреть все' %}</a>
-                    <div class="collapse" id="collapseExample">
-                        <div class="row justify-content-center text-center row-gap-3">
-                            {% for image in images %}
-                            <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="section-quote__photo">
-                                    <img class="section-quote__img" src="{% static image %}" alt="img-quote">
+                    <div class="col-12">
+                        <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                           aria-controls="collapseExample"
+                           class="courses-btn courses-btn--show form-btn mt-4">{% translate 'Смотреть все' %}</a>
+                        <div class="collapse" id="collapseExample">
+                            <div class="row justify-content-center text-center row-gap-3">
+                                {% for image in images %}
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="section-quote__photo">
+                                        <img class="section-quote__img" src="{% static image %}" alt="img-quote">
+                                    </div>
                                 </div>
-                            </div>
-                            {% endfor %}
-                            <div class="col-12">
-                                <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded=""
-                                    aria-controls="collapseExample"
-                                    class="courses-btn courses-btn--hide form-btn mt-4">{% translate 'Скрыть' %}</a>
+                                {% endfor %}
+                                <div class="col-12">
+                                    <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded=""
+                                       aria-controls="collapseExample"
+                                       class="courses-btn courses-btn--hide form-btn mt-4">{% translate 'Скрыть' %}</a>
+                                </div>
                             </div>
                         </div>
                     </div>

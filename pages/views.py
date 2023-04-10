@@ -8,7 +8,7 @@ from .models import Master, Course, NewItem
 def index_view(request):
     masters = Master.objects.all()
     courses = Course.objects.all()[:4]
-    images = [f"images/index_more/{i}.webp" for i in range(1, 20)]
+    images = [f"images/index_more/{i}.webp" for i in range(1, 20) if i not in (9, 10, 11)]
 
     context = {
         "masters": masters,

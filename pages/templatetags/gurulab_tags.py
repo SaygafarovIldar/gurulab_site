@@ -16,3 +16,10 @@ def is_news_page(request):
     path = [item for item in request.path.split("/")]
     if "news" in path or "courses" in path:
         return True
+
+
+@register.simple_tag()
+def is_home_page(request):
+    path = [item for item in request.path.split("/") if item]
+
+    return len(path) < 2

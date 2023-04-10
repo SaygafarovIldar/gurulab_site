@@ -1,4 +1,7 @@
 {% load i18n gurulab_tags static %}
+
+{% is_home_page request as is_home %}
+
 <nav class="navbar nav navbar-expand-lg">
     <div class="container navbar__container">
         <a class="navbar-brand" href="{% url 'index' %}">
@@ -14,16 +17,17 @@
                     <a class="nav__list-link nav-link" href="{% url 'index' %}">{% trans 'Главная' %}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav__list-link" href="#about__company">{% trans 'О нас' %}</a>
+                    <a class="nav-link nav__list-link"
+                       href="{% if not is_home %}/{% endif %}#about__company">{% trans 'О нас' %}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav__list-link" href="#masters">{% trans 'Мастера' %}</a>
+                    <a class="nav-link nav__list-link" href="{% if not is_home %}/{% endif %}#masters">{% trans 'Мастера' %}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav__list-link" href="{% url 'news' %}">{% trans 'Новости' %}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav__list-link" href="#contacts">{% trans 'Контакты' %}</a>
+                    <a class="nav-link nav__list-link" href="{% if not is_home %}/{% endif %}#contacts">{% trans 'Контакты' %}</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link nav__list-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
@@ -31,9 +35,9 @@
                     <div class="dropdown-menu dropdown__menu">
                         {% get_courses as courses %}
                         {% for course in courses %}
-                            <a class="dropdown-item dropdown__menu-item" href="{{ course.get_absolute_url }}">
-                                <p class="text-wrap">{{ course }}</p>
-                            </a>
+                        <a class="dropdown-item dropdown__menu-item" href="{{ course.get_absolute_url }}">
+                            <p class="text-wrap">{{ course }}</p>
+                        </a>
                         {% endfor %}
                     </div>
                 </li>
@@ -47,9 +51,9 @@
                     {% get_language_info_list for LANGUAGES as languages %}
 
                     {% for lang in languages %}
-                        <input type="submit" name="language"
-                               class="lang__link {% if LANGUAGE_CODE == lang.code %}active{% endif %}"
-                               value="{{ lang.code|upper }}">
+                    <input type="submit" name="language"
+                           class="lang__link {% if LANGUAGE_CODE == lang.code %}active{% endif %}"
+                           value="{{ lang.code|upper }}">
                     {% endfor %}
                 </form>
                 <div class="nav__location_info ml-auto float-start">

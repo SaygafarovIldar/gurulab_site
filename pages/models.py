@@ -16,8 +16,6 @@ class Course(models.Model):
         verbose_name="Длительность обучения", default="", max_length=100)
     students_in_group = models.CharField(
         verbose_name="Количество учеников в группе", max_length=100, default='')
-    has_checkbox = models.BooleanField(help_text="Включить, если у описания статьи есть переключение между месяцами",
-                                       default=False)
     slug = models.SlugField(
         help_text="Данное поле заполняется само при добавлении названия курса", default="")
 

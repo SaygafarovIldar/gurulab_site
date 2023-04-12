@@ -29,6 +29,9 @@ ALLOWED_HOSTS = [
     "127.0.0.1"
 ]
 
+BOT_TOKEN = "5772974226:AAEFc36iWU2AP7izhCnB-nXEYQnBuink1vI"
+CHANNEL_LINK = "site_messages"
+
 # Application definition
 
 INSTALLED_APPS = [

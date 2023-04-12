@@ -103,13 +103,14 @@ Gurulab
                 {% blocktranslate %}Хотите получить более подробную информацию? <br/> Наш менеджер готов помочь
                 вам!{% endblocktranslate %}
             </h2>
-            <form action="" class="contact-section__form contact-form row">
+            <form action="" class="contact-section__form contact-form row" method="post">
+                {% csrf_token %}
                 <div class="col-12 col-md-6 col-lg-4 mb-3 mb-lg-0">
-                    <input type="text" autocomplete="off" name="username" id=""
+                    <input type="text" autocomplete="off" name="username" id="username"
                            placeholder="{% translate 'Ваше имя' %}">
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 mb-3 mb-lg-0">
-                    <input type="text" autocomplete="off" name="phone_number" id=""
+                    <input type="text" autocomplete="off" name="phone_number" id="phone_number"
                            placeholder="{% translate 'Ваш номер телефона' %}"/>
                 </div>
                 <div class="col-12 col-md-12 col-lg-4">
@@ -169,9 +170,10 @@ Gurulab
                         {% translate 'Есть Вопросы? Оставьте Заявку' %}
                     </h3>
                 </div>
-                <form action="" class="newsletter-form">
-                    <input type="text" class="newsletter-form__input" placeholder="{% translate 'Ваше имя' %}">
-                    <input type="text" class="newsletter-form__input" placeholder="{% translate 'Номер телефона' %}">
+                <form action="" class="newsletter-form" method="post">
+                    {% csrf_token %}
+                    <input name="username" type="text" class="newsletter-form__input" placeholder="{% translate 'Ваше имя' %}">
+                    <input name="phone_number" type="text" class="newsletter-form__input" placeholder="{% translate 'Номер телефона' %}">
                     <button class="newsletter-form__btn form-btn" type="submit">{% translate 'Отправить' %}</button>
                 </form>
             </div>
